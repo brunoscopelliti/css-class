@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "bruno",
+    "plugin:jest/all"
+  ],
+  "plugins": [
+    "jest"
+  ],
+  "rules": {
+    "jest/prefer-expect-assertions": 0
+  }
+}
