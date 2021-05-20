@@ -18,7 +18,7 @@ npm i @bscop/css-class
 ```js
 import cssClass from "@bscop/css-class";
 
-cssClass();
+cssClass("btn", { "btn-disabled": true }); // btn btn-disabled
 ```
 
 ## Contribute

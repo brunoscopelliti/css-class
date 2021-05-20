@@ -22,10 +22,19 @@ describe("cssClass", () => {
   });
 
   it("returns class joined together /3", () => {
-    expect(cssClass("foo", { bar: true, baz: true })).toBe("foo bar baz");
+    expect(cssClass({ bar: true, baz: false }, "foo")).toBe("bar foo");
   });
 
   it("returns class joined together /4", () => {
-    expect(cssClass("foo", { bar: true, baz: false }, { kuux: false, bang: true })).toBe("foo bar bang");
+    expect(cssClass("foo", { bar: true, baz: true })).toBe("foo bar baz");
+  });
+
+  it("returns class joined together /5", () => {
+    expect(cssClass("foo", { bar: true, baz: false }, "lol", { kuux: false, bang: true })).toBe("foo bar lol bang");
+  });
+
+  it("ignores other values", () => {
+    // @ts-ignore
+    expect(cssClass(null, undefined, 2, false, "")).toBeUndefined();
   });
 });

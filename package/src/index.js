@@ -5,22 +5,23 @@
  */
 const cssClass =
   (...classes) => {
-    return classes.reduce(
-      (str, el) => {
-        if (typeof el == "string") {
-          return str + el;
-        }
-
-        for (const k in el) {
-          if (el[k] === true) {
-            str = `${str} ${k}`;
+    let result = "";
+    for (const entry of classes) {
+      if (typeof entry == "string") {
+        result = result
+          ? `${result} ${entry}`
+          : entry;
+      } else if (entry && typeof entry == "object") {
+        for (const k in entry) {
+          if (entry[k] === true) {
+            result = result
+              ? `${result} ${k}`
+              : k;
           }
         }
-
-        return str;
-      },
-      ""
-    ) || undefined;
+      }
+    }
+    return result || undefined;
   };
 
 export default cssClass;
