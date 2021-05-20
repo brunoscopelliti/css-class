@@ -1,3 +1,5 @@
-declare const noop : () => void;
+export type Input = string | Record<string, boolean>;
 
-export default noop;
+declare const cssClass : (...classes: Input[]) => string | undefined;
+
+export default cssClass;
