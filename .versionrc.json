@@ -9,6 +9,6 @@
     { "type": "perf", "hidden": true },
     { "type": "test", "hidden": true }
   ],
-  "commitUrlFormat": "https://github.com/brunoscopelliti/template-package/commits/{{hash}}",
-  "compareUrlFormat": "https://github.com/brunoscopelliti/template-package/compare/{{previousTag}}...{{currentTag}}"
+  "commitUrlFormat": "https://github.com/brunoscopelliti/css-class/commits/{{hash}}",
+  "compareUrlFormat": "https://github.com/brunoscopelliti/css-class/compare/{{previousTag}}...{{currentTag}}"
 }

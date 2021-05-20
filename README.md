@@ -1,24 +1,24 @@
-# template-package
+# css-class
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/brunoscopelliti/template-package/blob/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/@bscop/template-package.svg?style=flat)](https://www.npmjs.com/package/@bscop/template-package)
-[![CircleCI Status](https://circleci.com/gh/brunoscopelliti/template-package.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/brunoscopelliti/template-package)
-[![Coverage](https://img.shields.io/codecov/c/github/brunoscopelliti/template-package)](https://app.codecov.io/gh/brunoscopelliti/template-package/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/brunoscopelliti/css-class/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@bscop/css-class.svg?style=flat)](https://www.npmjs.com/package/@bscop/css-class)
+[![CircleCI Status](https://circleci.com/gh/brunoscopelliti/css-class.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/brunoscopelliti/css-class)
+[![Coverage](https://img.shields.io/codecov/c/github/brunoscopelliti/css-class)](https://app.codecov.io/gh/brunoscopelliti/css-class/)
 
-A template to start a generic npm module.
+Format string to be a valid class name.
 
 ## Install
 
 ```
-npm i @bscop/template-package
+npm i @bscop/css-class
 ```
 
 ## Usage
 
 ```js
-import main from "@bscop/template-package";
+import cssClass from "@bscop/css-class";
 
-main();
+cssClass();
 ```
 
 ## Contribute
