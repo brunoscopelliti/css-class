@@ -11,6 +11,7 @@ describe("cssClass", () => {
 
   it("returns class hardcoded", () => {
     expect(cssClass("foo")).toBe("foo");
+    expect(cssClass("foo bar")).toBe("foo bar");
   });
 
   it("returns class joined together", () => {
