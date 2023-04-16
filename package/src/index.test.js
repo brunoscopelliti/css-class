@@ -31,11 +31,15 @@ describe("cssClass", () => {
   });
 
   it("returns class joined together /5", () => {
-    expect(cssClass("foo", { bar: true, baz: false }, "lol", { kuux: false, bang: true })).toBe("foo bar lol bang");
+    expect(
+      cssClass("foo", { bar: true, baz: false }, "lol", {
+        kuux: false,
+        bang: true,
+      })
+    ).toBe("foo bar lol bang");
   });
 
   it("ignores other values", () => {
-    // @ts-ignore
-    expect(cssClass(null, undefined, 2, false, "")).toBeUndefined();
+    expect(cssClass(null, undefined, 0, false, "")).toBeUndefined();
   });
 });
