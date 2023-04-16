@@ -1,6 +1,6 @@
 {
   "name": "@bscop/css-class",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Format string to be a valid class name.",
   "main": "package/dist/index.js",
   "module": "package/dist/index.es.js",
